@@ -18,7 +18,7 @@
       $(function() {
       $('#vlink').hover(
         function () {
-        $(this.append('<span> ****</span>'));
+        $(this).append($('<span> ****</span>'));
       },
         function () {
           $(this).find("span:last").remove();
