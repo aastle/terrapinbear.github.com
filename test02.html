@@ -16,9 +16,14 @@
     <![endif]-->
     <script type="text/javascript">
       $(function() {
-      $('vlink').hover(function () {
+      $('#vlink').hover(
+        function () {
         $(this.append('<span> ****</span>'));
-      });
+      },
+        function () {
+          $(this).find("span:last").remove();
+        }
+      );
     });
     </script>
   </head>
